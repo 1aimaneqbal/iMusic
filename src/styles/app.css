@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.CurrentSongPlayingInfo{
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.CurrentSongPlayingInfo *{
+    padding: 5px;
+}
+.CurrentSongControls{
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.TimeStamp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+.TimeStamp input{
+    width: 100%;
+    padding: 1rem 0;
+}
+.TimeStamp p{
+    padding: 1rem;
+}
+.MediaControls{
+    display: flex;
+    width: 35%;
+    align-items: center;
+    justify-content: space-between;
+}
