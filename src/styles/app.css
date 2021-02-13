@@ -29,6 +29,7 @@ h3, h4{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 10vh;
 }
 .CurrentSongPlayingInfo *{
     padding: 5px;
@@ -72,26 +73,35 @@ h3, h4{
     top: 0;
     right: 0;
     width: 20rem;
+    background-color: white;
     box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
     height: 100%;
     overflow: auto;
+    transform: translateX(100%);
+    transition: 0.5s all ease;
+    opacity: 0;
+    z-index: 1;
 }
 .library h2{
     display: flex;
-    padding: 2rem 2rem 1rem 2rem;
+    justify-content: center;
+    padding: 1rem 2rem 1rem 2rem;
 }
 .librarySong{
     display: flex;
-    padding: 1rem 2rem;
+    padding: 1rem;
     align-items: center;
     cursor: pointer;
     transition: 0.2s all ease;
+    margin: 5px;
+    border-radius: 5px;
 }
 .librarySong:hover{
     background-color: rgba(189, 196, 236, 0.5);
 }
 .librarySong img{
     width: calc(20rem * 0.2);
+    border-radius: 5px;
 }
 .songdesc{
     padding-left: 1rem;
@@ -104,4 +114,52 @@ h3, h4{
 }
 .selectedLibrary{
     background-color: rgb(240, 202, 255);
+}
+.activelibrary{
+    transform: translateX(0);
+    opacity: 1;
+}
+/*------------Navbar--------------*/
+nav{
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s all ease;
+    outline: none;
+    object-fit: contain;
+    border-radius: 50%;
+    padding: 14px 16px;
+    margin-right: -8px ;
+    margin-top: -8px;
+    border: 1px solid grey
+}
+button svg{
+    padding: 0;
+    transition: 0.2s all ease;
+}
+.btnactive{
+    background-color: black;
+    color: white;
+    transition: 0.2s all ease;
+}
+.btnactive:hover{
+    color: black;
+    background-color: white;
+}
+nav button:hover{
+    background-color:black;
+    color: white;
+}
+nav button:hover svg{
+    transform: scale(1.2);
 }

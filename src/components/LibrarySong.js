@@ -24,14 +24,6 @@ const LibrarySong = ({song, setAllSongs, setCurrSong, allSongs, audioRef, isplay
                     audioRef.current.play();
                 });
             }
-        }else{
-            const playPromise = audioRef.current.play();
-            if (playPromise!==undefined){
-                playPromise.then((audio)=>{
-                    audioRef.current.play();
-                });
-            }
-            setIsplaying(!isplaying)
         }
     }
     return (
