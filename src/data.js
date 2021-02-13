@@ -1,0 +1,103 @@
+import { v4 as uuidv4 } from "uuid";
+function getMusicData() {
+    return [
+        {
+            name: "Kokoronashi",
+            cover: "https://64.media.tumblr.com/34813ca062ebef443bc6596c3f9c6a22/a32498ea07e94bcc-dd/s400x600/e2b3eddc0525bbff5c3a3a750ba9eed9c7741eff.jpg",
+            artist: "Shuang Sheng",
+            audio: "https://www.mboxdrive.com/KOKORONASHI.mp3",
+            id: uuidv4(),
+            active: true,
+        },
+        {
+            name: "Hikariare",
+            cover: "https://64.media.tumblr.com/639532bf080f123d6dc452be992d7064/729a094c90ea73bb-e0/s400x600/47bbc7202bb9ff8076050cbdef89aa6666456a2c.jpg",
+            artist: "Burnout Syndromes",
+            audio: "https://www.mboxdrive.com/Hikari%20Are.mp3",
+            id: uuidv4(),
+            active: false,
+        },
+        {
+            name: "Hikariare",
+            cover: "https://64.media.tumblr.com/639532bf080f123d6dc452be992d7064/729a094c90ea73bb-e0/s400x600/47bbc7202bb9ff8076050cbdef89aa6666456a2c.jpg",
+            artist: "Burnout Syndromes",
+            audio: "https://www.mboxdrive.com/Hikari%20Are.mp3",
+            id: uuidv4(),
+            active: false,
+        },
+        {
+            name: "Hikariare",
+            cover: "https://64.media.tumblr.com/639532bf080f123d6dc452be992d7064/729a094c90ea73bb-e0/s400x600/47bbc7202bb9ff8076050cbdef89aa6666456a2c.jpg",
+            artist: "Burnout Syndromes",
+            audio: "https://www.mboxdrive.com/Hikari%20Are.mp3",
+            id: uuidv4(),
+            active: false,
+        },
+        {
+            name: "Hikariare",
+            cover: "https://64.media.tumblr.com/639532bf080f123d6dc452be992d7064/729a094c90ea73bb-e0/s400x600/47bbc7202bb9ff8076050cbdef89aa6666456a2c.jpg",
+            artist: "Burnout Syndromes",
+            audio: "https://www.mboxdrive.com/Hikari%20Are.mp3",
+            id: uuidv4(),
+            active: false,
+        },
+        {
+            name: "Hikariare",
+            cover: "https://64.media.tumblr.com/639532bf080f123d6dc452be992d7064/729a094c90ea73bb-e0/s400x600/47bbc7202bb9ff8076050cbdef89aa6666456a2c.jpg",
+            artist: "Burnout Syndromes",
+            audio: "https://www.mboxdrive.com/Hikari%20Are.mp3",
+            id: uuidv4(),
+            active: false,
+        },
+        {
+            name: "Hikariare",
+            cover: "https://64.media.tumblr.com/639532bf080f123d6dc452be992d7064/729a094c90ea73bb-e0/s400x600/47bbc7202bb9ff8076050cbdef89aa6666456a2c.jpg",
+            artist: "Burnout Syndromes",
+            audio: "https://www.mboxdrive.com/Hikari%20Are.mp3",
+            id: uuidv4(),
+            active: false,
+        },
+        {
+            name: "Hikariare",
+            cover: "https://64.media.tumblr.com/639532bf080f123d6dc452be992d7064/729a094c90ea73bb-e0/s400x600/47bbc7202bb9ff8076050cbdef89aa6666456a2c.jpg",
+            artist: "Burnout Syndromes",
+            audio: "https://www.mboxdrive.com/Hikari%20Are.mp3",
+            id: uuidv4(),
+            active: false,
+        },
+        {
+            name: "Hikariare",
+            cover: "https://64.media.tumblr.com/639532bf080f123d6dc452be992d7064/729a094c90ea73bb-e0/s400x600/47bbc7202bb9ff8076050cbdef89aa6666456a2c.jpg",
+            artist: "Burnout Syndromes",
+            audio: "https://www.mboxdrive.com/Hikari%20Are.mp3",
+            id: uuidv4(),
+            active: false,
+        },
+        {
+            name: "Hikariare",
+            cover: "https://64.media.tumblr.com/639532bf080f123d6dc452be992d7064/729a094c90ea73bb-e0/s400x600/47bbc7202bb9ff8076050cbdef89aa6666456a2c.jpg",
+            artist: "Burnout Syndromes",
+            audio: "https://www.mboxdrive.com/Hikari%20Are.mp3",
+            id: uuidv4(),
+            active: false,
+        },
+        {
+            name: "Hikariare",
+            cover: "https://64.media.tumblr.com/639532bf080f123d6dc452be992d7064/729a094c90ea73bb-e0/s400x600/47bbc7202bb9ff8076050cbdef89aa6666456a2c.jpg",
+            artist: "Burnout Syndromes",
+            audio: "https://www.mboxdrive.com/Hikari%20Are.mp3",
+            id: uuidv4(),
+            active: false,
+        },
+        {
+            name: "Hikariare",
+            cover: "https://64.media.tumblr.com/639532bf080f123d6dc452be992d7064/729a094c90ea73bb-e0/s400x600/47bbc7202bb9ff8076050cbdef89aa6666456a2c.jpg",
+            artist: "Burnout Syndromes",
+            audio: "https://www.mboxdrive.com/Hikari%20Are.mp3",
+            id: uuidv4(),
+            active: false,
+        },
+    ]
+}
+
+export default getMusicData;

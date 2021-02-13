@@ -1,11 +1,15 @@
 import React from 'react'
 import SongControls from './MainContent/SongControls'
 import SongInfo from "./MainContent/SongInfo"
-const MainContent = () => {
+const MainContent = ({allSongs, setAllSongs, currSong, setCurrSong, isplaying, setIsplaying, audioRef, time, setTime}) => {
     return (
         <div>
-            <SongInfo />
-            <SongControls />
+            <SongInfo currSong={currSong}/>
+            <SongControls currSong={currSong} isplaying={isplaying} setIsplaying={setIsplaying}
+            audioRef={audioRef}
+            time={time}
+            setTime={setTime}
+            />
         </div>
     )
 }
