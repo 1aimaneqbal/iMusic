@@ -54,6 +54,7 @@ h3, h4{
     justify-content: center;
     align-items: center;
     width: 40%;
+    background-color: #fff;
 }
 .track{
     width: 100%;
@@ -96,6 +97,7 @@ input[type="range"]::-webkit-slider-thumb{
     width: 35%;
     align-items: center;
     justify-content: space-between;
+    background-color: #fff;
 }
 .MediaControls svg{
     cursor: pointer;
@@ -107,7 +109,7 @@ input[type="range"]::-webkit-slider-thumb{
     top: 0;
     right: 0;
     width: 20rem;
-    background-color: white;
+    background-color: rgba(255, 255, 255, .95);
     box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
     height: 100%;
     overflow: auto;
@@ -200,7 +202,8 @@ nav h1{
     font-family: 'Lobster Two', cursive;
     font-size: 2rem;
     transition: all 0.2s ease;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
 }
 nav button{
     background: transparent;
@@ -236,8 +239,8 @@ nav button:hover svg{
     transform: scale(1.2);
 }
 @media screen and (max-width: 1000px){
-    .library{
-        top: 10vh;
+    .library h2{
+        margin-top: 10vh;
     }
     nav{
         background-color: white;
@@ -248,19 +251,17 @@ nav button:hover svg{
         width: 100%;
     }
     .librarySong{
-        padding: 2rem;
+        padding: 1rem;
     }
     .librarySong img{
-        width: 8rem;
+        width: 6rem;
     }
     .songdesc h3{
-        font-size: 1.6rem;
+        font-size: 1.2rem;
+        font-weight: 600;
     }
     .songdesc h4{
-        font-size: 1.2rem;
-    }
-    .CurrentSongControls{
-        margin-top: 5vh;
+        font-size: 1rem;
     }
     .TimeStamp{
         width: 80%;

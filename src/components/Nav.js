@@ -6,7 +6,7 @@ const Nav = ({libraryUpdater,setLibraryUpdater, currSong}) => {
         setLibraryUpdater(!libraryUpdater)
     }
     const navheadercolor = {
-        color: currSong.color[1]
+        color: `#000`
     }
     return (
         <nav>

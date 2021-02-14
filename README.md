@@ -4,7 +4,7 @@
 
 ### If you want to clone this project intsall the dependencies after cloning
 
-Songs can be added to the file named `./src/data.js` with the format specified in thhe file.
+Songs can be added to the file named `./src/data.js` with the format specified in the file.
 
 I have no plans to update the sonng data as of now.
 
