@@ -1,11 +1,13 @@
-import React, {useState, useRef} from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 import "./styles/app.css"
 import MainContent from "./components/MainContent"
 import data from './data'
 import Library from './components/Library'
 import Nav from './components/Nav'
 const App = () => {
-    const [allSongs, setAllSongs] = useState(data());
+    const unfilteredSongs = data();
+    const [allSongs, setAllSongs] = useState(unfilteredSongs);
+    const [filterStatus, setFilterStatus] = useState('all')
     const [currSong, setCurrSong] = useState(allSongs[0]);
     const [isplaying, setIsplaying] = useState(false);
     const [time, setTime] = useState({
@@ -30,11 +32,28 @@ const App = () => {
         await setCurrSong(allSongs[(currentIndex + 1) % allSongs.length]);
         if(isplaying) audioRef.current.play()
     }
+    const filterHandler = () => {
+        switch(filterStatus){
+            case 'jp':
+                setAllSongs(unfilteredSongs.filter(e => e.lang === 'jp'))
+                break;
+            case 'en':
+                setAllSongs(unfilteredSongs.filter(e => e.lang === 'en'))
+                break;
+            default:
+                setAllSongs(unfilteredSongs)
+                break;
+        }
+    }
+    useEffect(()=>{
+        filterHandler()
+    }, [filterStatus])
     return (
         <div>
             <Nav
             libraryUpdater={libraryUpdater}
             setLibraryUpdater={setLibraryUpdater}
+            currSong={currSong}
             />
             <MainContent 
                 allSongs={allSongs}
@@ -47,6 +66,7 @@ const App = () => {
                 time={time}
                 setTime={setTime}
                 libraryUpdater={libraryUpdater}
+                setLibraryUpdater={setLibraryUpdater}
              />
              <Library 
                 allSongs={allSongs}
@@ -56,6 +76,7 @@ const App = () => {
                 setIsplaying={setIsplaying}
                 setAllSongs={setAllSongs}
                 libraryUpdater={libraryUpdater}
+                setFilterStatus={setFilterStatus}
             />
             <audio 
                 ref={audioRef}

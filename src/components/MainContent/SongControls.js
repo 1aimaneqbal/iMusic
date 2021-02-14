@@ -48,7 +48,8 @@ const SongControls = ({currSong, setCurrSong, allSongs, setAllSongs, isplaying, 
         setAllSongs(activeSong)
     }, [currSong]);
     const sliderAnim ={
-        width: `${time.animation}%`
+        width: `${time.animation}%`,
+        background: `linear-gradient(to right, ${currSong.color[0]}, ${currSong.color[1]})`
     }
     return (
         <div>

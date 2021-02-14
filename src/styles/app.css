@@ -39,7 +39,7 @@ h3, h4{
 }
 .CurrentSongPlayingInfo img{
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
 }
 .CurrentSongControls{
@@ -70,7 +70,6 @@ h3, h4{
     left: 0;
     width: 0%;
     height: 100%;
-    background: purple;
     border-radius: 1rem;
     pointer-events: none;
     transition: 0.2s all linear;
@@ -121,6 +120,37 @@ input[type="range"]::-webkit-slider-thumb{
     display: flex;
     justify-content: center;
     padding: 1rem 2rem 1rem 2rem;
+    pointer-events: none;
+}
+.library select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    padding: 0.5rem;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 0.2rem;
+    background-color: white;
+    transition: all 0.5s ease;
+}
+.library select:hover{
+    border: 1px solid rgb(99, 99, 99);
+    background-color: rgb(248, 248, 248);
+}
+.library .select{
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+}
+.library .select::after{
+    content: "\25BC";
+    color: rgb(100, 100, 100);
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    pointer-events: none;
 }
 .librarySong{
     display: flex;
@@ -165,6 +195,12 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
+}
+nav h1{
+    font-family: 'Lobster Two', cursive;
+    font-size: 2rem;
+    transition: all 0.2s ease;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 nav button{
     background: transparent;
