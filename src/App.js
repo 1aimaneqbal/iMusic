@@ -19,9 +19,7 @@ const App = () => {
     const timeUpdateHandler = (e) =>{
         const current = e.target.currentTime;
         const duration = e.target.duration;
-        const roundCurrent = Math.round(current)
-        const roundDuration = Math.round(duration)
-        const animation = Math.round((roundCurrent/roundDuration)*100)
+        const animation = (current/duration)*100
         setTime({
             ...time, current, duration, animation
         })
