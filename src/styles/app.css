@@ -13,7 +13,7 @@
 }
 *::-webkit-scrollbar-thumb{
     background-color: rgba(155,155,155,0.5);
-    border-radius: 20px;
+    border-radius: 8px;
     border: transparent;
 }
 body{
@@ -23,19 +23,24 @@ h3, h4{
     font-weight: 400;
     color: rgb(99, 99, 99);
 }
+.App{
+    transition: all 0.5s ease;
+}
+.maincomponent{
+    transform: translateX(-5%) scale(0.9);
+}
 .CurrentSongPlayingInfo{
-    height: 65vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 10vh;
 }
-.CurrentSongPlayingInfo *{
-    padding: 5px;
-}
 .CurrentSongPlayingInfo img{
     border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
 }
 .CurrentSongControls{
     height: 15vh;
@@ -50,9 +55,39 @@ h3, h4{
     align-items: center;
     width: 40%;
 }
-.TimeStamp input{
+.track{
     width: 100%;
-    padding: 1rem 0;
+    background:rgb(248, 248, 248);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    height: 1rem;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.trackAnim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: purple;
+    border-radius: 1rem;
+    pointer-events: none;
+    transition: 0.2s all linear;
+}
+.track input{
+    width: 100%;
+    -webkit-appearance: none;
+    background-color: transparent;
+}
+input[type="range"]:focus{
+    outline: none;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color:transparent;
 }
 .TimeStamp p{
     padding: 1rem;
@@ -119,6 +154,7 @@ h3, h4{
     transform: translateX(0);
     opacity: 1;
 }
+
 /*------------Navbar--------------*/
 nav{
     min-height: 10vh;
@@ -162,4 +198,38 @@ nav button:hover{
 }
 nav button:hover svg{
     transform: scale(1.2);
+}
+@media screen and (max-width: 1000px){
+    .library{
+        top: 10vh;
+    }
+    nav{
+        background-color: white;
+    }
+}
+@media screen and (max-width: 768px){
+    .library{
+        width: 100%;
+    }
+    .librarySong{
+        padding: 2rem;
+    }
+    .librarySong img{
+        width: 8rem;
+    }
+    .songdesc h3{
+        font-size: 1.6rem;
+    }
+    .songdesc h4{
+        font-size: 1.2rem;
+    }
+    .CurrentSongControls{
+        margin-top: 5vh;
+    }
+    .TimeStamp{
+        width: 80%;
+    }
+    .MediaControls{
+        width: 60%;
+    }
 }
