@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/iMusic/static/css/main.5bac6477.chunk.css",
-    "main.js": "/iMusic/static/js/main.13eff2f2.chunk.js",
-    "main.js.map": "/iMusic/static/js/main.13eff2f2.chunk.js.map",
+    "main.js": "/iMusic/static/js/main.276cf04b.chunk.js",
+    "main.js.map": "/iMusic/static/js/main.276cf04b.chunk.js.map",
     "runtime-main.js": "/iMusic/static/js/runtime-main.b2b00331.js",
     "runtime-main.js.map": "/iMusic/static/js/runtime-main.b2b00331.js.map",
     "static/js/2.88231a27.chunk.js": "/iMusic/static/js/2.88231a27.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.b2b00331.js",
     "static/js/2.88231a27.chunk.js",
     "static/css/main.5bac6477.chunk.css",
-    "static/js/main.13eff2f2.chunk.js"
+    "static/js/main.276cf04b.chunk.js"
   ]
 }
