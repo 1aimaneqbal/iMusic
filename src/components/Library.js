@@ -1,6 +1,6 @@
 import React from 'react'
 import LibrarySong from './LibrarySong'
-const Library = ({allSongs, setAllSongs, setCurrSong, audioRef, isplaying, setIsplaying, libraryUpdater, setFilterStatus}) => {
+const Library = ({allSongs, setAllSongs, setCurrSong, audioRef, isplaying, setIsplaying, libraryUpdater, setFilterStatus, filterStatus}) => {
     const statusHandler = (e) => {
         setFilterStatus(e.target.value)
     }

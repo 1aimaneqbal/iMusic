@@ -5,17 +5,27 @@ const MainContent = ({allSongs, setAllSongs, currSong, setCurrSong, isplaying, s
     const mainContentHandler = () => {
         if(libraryUpdater) setLibraryUpdater(!libraryUpdater)
     }
+    const bgGradStyle ={
+        background: `linear-gradient(to bottom, #fff, ${currSong.color[1]})`
+    }
+    
     return (
-        <div onClick={mainContentHandler} className={`App ${libraryUpdater ? 'maincomponent' : ''}`}>
-            <SongInfo currSong={currSong}/>
-            <SongControls currSong={currSong} isplaying={isplaying} setIsplaying={setIsplaying}
-            audioRef={audioRef}
-            time={time}
-            setTime={setTime}
-            allSongs={allSongs}
-            setAllSongs={setAllSongs}
-            setCurrSong={setCurrSong}
-            />
+        <div className="AppContainer" >
+            <div onClick={mainContentHandler} className={`App ${libraryUpdater ? 'maincomponent' : ''}`}>
+                <SongInfo currSong={currSong}/>
+                <SongControls 
+                    currSong={currSong} 
+                    isplaying={isplaying} 
+                    setIsplaying={setIsplaying}
+                    audioRef={audioRef}
+                    time={time}
+                    setTime={setTime}
+                    allSongs={allSongs}
+                    setAllSongs={setAllSongs}
+                    setCurrSong={setCurrSong}
+                />
+            </div>
+            <div style={bgGradStyle} className="bgGrad"></div>
         </div>
     )
 }

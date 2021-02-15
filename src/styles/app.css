@@ -23,8 +23,24 @@ h3, h4{
     font-weight: 400;
     color: rgb(99, 99, 99);
 }
+.AppContainer{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
 .App{
     transition: all 0.5s ease;
+}
+.bgGrad{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 10vh;
+    left: 0;
+    opacity: 0.5;
+    background-color: lightcoral;
+    z-index: -3;
+    pointer-events: none;
 }
 .maincomponent{
     transform: translateX(-5%) scale(0.9);
@@ -42,6 +58,10 @@ h3, h4{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
 }
+.CurrentSongPlayingInfo h2,
+.CurrentSongPlayingInfoh3{
+    pointer-events: none;
+}
 .CurrentSongControls{
     height: 15vh;
     display: flex;
@@ -54,7 +74,9 @@ h3, h4{
     justify-content: center;
     align-items: center;
     width: 40%;
-    background-color: #fff;
+}
+.TimeStamp p{
+    pointer-events: none;
 }
 .track{
     width: 100%;
@@ -97,7 +119,6 @@ input[type="range"]::-webkit-slider-thumb{
     width: 35%;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff;
 }
 .MediaControls svg{
     cursor: pointer;
@@ -147,10 +168,10 @@ input[type="range"]::-webkit-slider-thumb{
     padding: 1rem;
 }
 .library .select::after{
-    content: "\25BC";
+    content: "\23f7";
     color: rgb(100, 100, 100);
     position: absolute;
-    top: 1.5rem;
+    top: 1.25rem;
     right: 1.5rem;
     pointer-events: none;
 }

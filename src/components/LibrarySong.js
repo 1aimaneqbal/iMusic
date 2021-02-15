@@ -1,5 +1,5 @@
-import React from 'react'
-const LibrarySong = ({song, setAllSongs, setCurrSong, allSongs, audioRef, isplaying, setIsplaying}) => {
+import React, {useEffect} from 'react'
+const LibrarySong = ({song, setAllSongs, setCurrSong, allSongs, audioRef, isplaying, setIsplaying, filterStatus}) => {
     const changeFromLibraryHandler = async () =>{
         const selectSong = song;
         await setCurrSong(selectSong);
@@ -15,7 +15,11 @@ const LibrarySong = ({song, setAllSongs, setCurrSong, allSongs, audioRef, isplay
             }
         });
         setAllSongs(activeSong)
-        if(isplaying) audioRef.current.play()
+        if(isplaying) audioRef.current.play();
+        else{
+            setIsplaying(!isplaying);
+            audioRef.current.play();
+        }
     }
     return (
         <div onClick={changeFromLibraryHandler} className={`librarySong ${song.active ? 'selectedLibrary' : ''}`}>
