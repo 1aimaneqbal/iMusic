@@ -6,7 +6,7 @@ const MainContent = ({allSongs, setAllSongs, currSong, setCurrSong, isplaying, s
         if(libraryUpdater) setLibraryUpdater(!libraryUpdater)
     }
     const bgGradStyle ={
-        background: `linear-gradient(to bottom, #fff, #000)`
+        background: `linear-gradient(to bottom, #fff, ${currSong.color[1]})`
     }
     
     return (
