@@ -1,5 +1,7 @@
 # iMusic - Online Music Player
 
+Checkout the live version [here](https://1aimaneqbal.github.io/iMusic/)
+
 ## This project was made using React framework.
 
 ### If you want to clone this project intsall the dependencies after cloning
