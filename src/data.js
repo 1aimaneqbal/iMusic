@@ -103,11 +103,11 @@ function getMusicData() {
         },
         {
             name: "Silhouette",
-            cover: "https://64.media.tumblr.com/760ef24fac824eb7dbdd8754a9fc0a6c/d7a3cd0ea6ca7a5c-08/s400x600/3e9b0699787ae79f035026e41b5b7f65ef86f833.jpg",
+            cover: "https://64.media.tumblr.com/fa59f269e41d0d6cf8bddd9684849cbd/96b36832a4a7ebad-f5/s400x600/82e19a17c19f6767008e780b7406624a301df539.jpg",
             artist: "Kana Boon",
             audio: "https://drive.google.com/uc?export=download&id=1CCUfX5RwWoNNYfdzVa7r0EiCRNnK33g_",
             id: uuidv4(),
-            color: ["#f255fc","#1d2452"],
+            color: ["#E5E4C8","##704D30"],
             lang: "jp",
             active: false,
         },
