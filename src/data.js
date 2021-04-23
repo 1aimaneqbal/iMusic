@@ -6,7 +6,6 @@ function getMusicData() {
             cover: "https://64.media.tumblr.com/823797196ac55db29a3f6143afb10c57/1140f1d3a8a5f8ac-50/s400x600/1f0025c0ade97cd6cf8f9ea5de654172c4556da8.png",
             artist: "Yui",
             audio: "https://drive.google.com/uc?export=download&id=1kj81x2B_xXn0wWPBTTAtX5hYbwuEnwNs",
-            // audio: "https://www.mboxdrive.com/Again.mp3",
             id: uuidv4(),
             color: ["#e8dedf","#aa703e"],
             lang: "jp",
