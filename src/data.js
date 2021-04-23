@@ -107,7 +107,7 @@ function getMusicData() {
             artist: "Kana Boon",
             audio: "https://drive.google.com/uc?export=download&id=1CCUfX5RwWoNNYfdzVa7r0EiCRNnK33g_",
             id: uuidv4(),
-            color: ["#E5E4C8","##704D30"],
+            color: ["#E5E4C8","##704D31"],
             lang: "jp",
             active: false,
         },
