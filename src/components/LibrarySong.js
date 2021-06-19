@@ -4,7 +4,7 @@ const LibrarySong = ({song, setAllSongs, setCurrSong, allSongs, audioRef, isplay
         const selectSong = song;
         await setCurrSong(selectSong);
         const activeSong = allSongs.map((songs) =>{
-            if(songs.id===song.id){
+            if(songs._id===song._id){
                 return{
                     ...songs, active: true
                 }

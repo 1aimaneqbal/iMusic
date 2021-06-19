@@ -1,23 +1,24 @@
 import React from 'react'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faMusic, faTimesCircle} from '@fortawesome/free-solid-svg-icons'
-const Nav = ({libraryUpdater,setLibraryUpdater, currSong}) => {
+import { UilCloudUpload, UilMusic } from '@iconscout/react-unicons'
+
+const Nav = ({libraryUpdater,setLibraryUpdater, addSongsPane, setAddSongsPane}) => {
     const libraryHandler = () => {
         setLibraryUpdater(!libraryUpdater)
     }
-    const navheadercolor = {
-        color: `#000`
+    const addSongHandler = () => {
+        setAddSongsPane(!addSongsPane)
     }
     return (
         <nav>
-            <h1 style={navheadercolor}>iMusic</h1>
-            <button onClick={libraryHandler} className={libraryUpdater ? 'btnTranslate' : ''}>
-                {libraryUpdater ? 
-                <FontAwesomeIcon icon={faTimesCircle}/>
-                :
-                <FontAwesomeIcon icon={faMusic}/>
-            }
-            </button>
+            <h1>iMusic</h1>
+            <div className="btn">
+                <button onClick={addSongHandler}>
+                    <UilCloudUpload />
+                </button>
+                <button onClick={libraryHandler}>
+                    <UilMusic />
+                </button>
+            </div>
         </nav>
     )
 }

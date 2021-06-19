@@ -1,9 +1,10 @@
 import React from 'react'
 import SongControls from './MainContent/SongControls'
 import SongInfo from "./MainContent/SongInfo"
-const MainContent = ({allSongs, setAllSongs, currSong, setCurrSong, isplaying, setIsplaying, audioRef, time, setTime, libraryUpdater, setLibraryUpdater}) => {
+const MainContent = ({allSongs, setAllSongs, currSong, setCurrSong, isplaying, setIsplaying, audioRef, time, setTime, libraryUpdater, setLibraryUpdater, addSongsPane, setAddSongsPane}) => {
     const mainContentHandler = () => {
         if(libraryUpdater) setLibraryUpdater(!libraryUpdater)
+        if(addSongsPane) setAddSongsPane(!addSongsPane)
     }
     const bgGradStyle ={
         background: `linear-gradient(to bottom, #fff, ${currSong.color[1]})`

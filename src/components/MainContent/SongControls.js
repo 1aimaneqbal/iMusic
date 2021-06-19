@@ -21,7 +21,7 @@ const SongControls = ({currSong, setCurrSong, allSongs, setAllSongs, isplaying, 
         setTime({...time, current: e.target.value})
     }
     const skipHandler = async (direction) => {
-        const currentIndex = allSongs.findIndex((song) => song.id === currSong.id)
+        const currentIndex = allSongs.findIndex((song) => song._id === currSong._id)
         if(direction==='next'){
             await setCurrSong(allSongs[(currentIndex + 1) % allSongs.length]);
         }
@@ -35,7 +35,7 @@ const SongControls = ({currSong, setCurrSong, allSongs, setAllSongs, isplaying, 
     }
     useEffect(()=>{
         const activeSong = allSongs.map((songs) =>{
-            if(songs.id===currSong.id){
+            if(songs._id===currSong._id){
                 return{
                     ...songs, active: true
                 }

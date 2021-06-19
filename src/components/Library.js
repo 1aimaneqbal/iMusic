@@ -16,7 +16,7 @@ const Library = ({allSongs, setAllSongs, setCurrSong, audioRef, isplaying, setIs
             </div>
             <div className="individualLibraryComponent">
                 {allSongs.map((song) =>(
-                    <LibrarySong song={song} setCurrSong={setCurrSong} key={song.id} allSongs={allSongs} audioRef={audioRef} 
+                    <LibrarySong song={song} setCurrSong={setCurrSong} key={song._id} allSongs={allSongs} audioRef={audioRef} 
                     isplaying={isplaying}
                     setIsplaying={setIsplaying}
                     setAllSongs={setAllSongs}
