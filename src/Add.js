@@ -8,7 +8,7 @@ const Add = ({addSongsPane}) => {
     const [audio, setAudio] = useState('')
     const [color1, setColor1] = useState('')
     const [color2, setColor2] = useState('')
-    const [lang, setLang] = useState('')
+    const [lang, setLang] = useState('en')
     const [pass, setPass] = useState('')
 
     const onNameChange = (e) =>{
@@ -50,7 +50,7 @@ const Add = ({addSongsPane}) => {
             name, cover, artist, audio, color, lang
         }
         if(pass==="Qwerty@21"){
-            await axios.post('http://localhost:3001/', data)
+            await axios.post('https://imusic-rest-api.herokuapp.com/', data)
             alert("Song Added to DB")
             setName('')
             setCover('')

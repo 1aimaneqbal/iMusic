@@ -1,7 +1,6 @@
 import React, {useState, useRef, useEffect} from 'react'
 import "./styles/app.css"
 import MainContent from "./components/MainContent"
-import data from './data'
 import Library from './components/Library'
 import Nav from './components/Nav'
 import Add from './Add'
@@ -18,7 +17,7 @@ const Main = ({fetchedSongs}) => {
         animation: 0,
     });
     const [libraryUpdater, setLibraryUpdater] = useState(false)
-    const [addSongsPane, setAddSongsPane] = useState(true)
+    const [addSongsPane, setAddSongsPane] = useState(false)
     const timeUpdateHandler = (e) =>{
         const current = e.target.currentTime;
         const duration = e.target.duration;
