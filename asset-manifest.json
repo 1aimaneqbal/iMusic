@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/iMusic/static/css/main.6153043a.chunk.css",
-    "main.js": "/iMusic/static/js/main.63f40246.chunk.js",
-    "main.js.map": "/iMusic/static/js/main.63f40246.chunk.js.map",
+    "main.css": "/iMusic/static/css/main.922d1695.chunk.css",
+    "main.js": "/iMusic/static/js/main.99472239.chunk.js",
+    "main.js.map": "/iMusic/static/js/main.99472239.chunk.js.map",
     "runtime-main.js": "/iMusic/static/js/runtime-main.b2b00331.js",
     "runtime-main.js.map": "/iMusic/static/js/runtime-main.b2b00331.js.map",
-    "static/js/2.88231a27.chunk.js": "/iMusic/static/js/2.88231a27.chunk.js",
-    "static/js/2.88231a27.chunk.js.map": "/iMusic/static/js/2.88231a27.chunk.js.map",
+    "static/js/2.d221e48c.chunk.js": "/iMusic/static/js/2.d221e48c.chunk.js",
+    "static/js/2.d221e48c.chunk.js.map": "/iMusic/static/js/2.d221e48c.chunk.js.map",
     "index.html": "/iMusic/index.html",
-    "static/css/main.6153043a.chunk.css.map": "/iMusic/static/css/main.6153043a.chunk.css.map",
-    "static/js/2.88231a27.chunk.js.LICENSE.txt": "/iMusic/static/js/2.88231a27.chunk.js.LICENSE.txt"
+    "static/css/main.922d1695.chunk.css.map": "/iMusic/static/css/main.922d1695.chunk.css.map",
+    "static/js/2.d221e48c.chunk.js.LICENSE.txt": "/iMusic/static/js/2.d221e48c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b2b00331.js",
-    "static/js/2.88231a27.chunk.js",
-    "static/css/main.6153043a.chunk.css",
-    "static/js/main.63f40246.chunk.js"
+    "static/js/2.d221e48c.chunk.js",
+    "static/css/main.922d1695.chunk.css",
+    "static/js/main.99472239.chunk.js"
   ]
 }
