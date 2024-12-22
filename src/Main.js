@@ -86,8 +86,8 @@ const Main = ({fetchedSongs}) => {
                 src={currSong.audio}
                 onTimeUpdate={timeUpdateHandler}
                 onLoadedMetadata={timeUpdateHandler}
-                onEnded={onSongEndHandler}
-            ></audio>
+                onEnded={onSongEndHandler}>
+            </audio>
             <Add
                 addSongsPane={addSongsPane}
             />

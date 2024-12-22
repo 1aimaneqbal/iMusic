@@ -8,7 +8,7 @@ const App = () => {
     },[])
     const fetchSongsFromAPI = async () =>{
         try {
-            const fetch = await axios.get("https://imusic-rest-api.herokuapp.com/")
+            const fetch = await axios.get("https://imusic-rest-api-production.up.railway.app/")
             setFetchedSongs(fetch.data)
         } catch (error) {
             console.log(error)
