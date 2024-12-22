@@ -3,7 +3,7 @@ import "./styles/app.css"
 import MainContent from "./components/MainContent"
 import Library from './components/Library'
 import Nav from './components/Nav'
-import Add from './Add'
+import Add from './components/Add'
 
 const Main = ({fetchedSongs}) => {
     const unfilteredSongs = fetchedSongs;
